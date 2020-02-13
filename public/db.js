@@ -37,7 +37,7 @@ function checkDatabase() {
   const transaction = db.transaction(["pending"], "readwrite");
   const store = transaction.objectStore("pending");
   const getAll = store.getAll();
-
+  
   getAll.onsuccess = function() {
     if (getAll.result.length > 0) {
       fetch("/api/transaction/bulk", {
@@ -58,7 +58,7 @@ function checkDatabase() {
         store.clear();
       });
     }
-  };
+  };  
 }
 
 // listen for app coming back online

@@ -13,9 +13,10 @@
     "url": "git+https://github.com/michaelhrivnak/Budget-Tracker.git"
   },
   "author": "",
-  "license": "ISC",  
+  "license": "ISC",
   "homepage": "https://github.com/michaelhrivnak/Budget-Tracker#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "lite-server": "^2.5.3",
